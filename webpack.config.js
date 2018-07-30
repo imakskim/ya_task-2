@@ -1,6 +1,7 @@
 // basic vars
-const path = require('path')
-const webpack = require('webpack')
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // additional plugins
 
@@ -23,4 +24,20 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '../'
   },
-}
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.pug'
+    })
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        options: {
+          pretty: true
+        }
+      }
+    ]
+  }
+};
