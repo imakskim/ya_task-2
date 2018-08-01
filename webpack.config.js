@@ -22,7 +22,6 @@ module.exports = {
   output: {
     filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '../'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -39,5 +38,8 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    stats: "errors-only"
   }
 };
