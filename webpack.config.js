@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const pug = require('./webpack/pug');
 const devserver = require('./webpack/devserver');
-
-// additional plugins
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const sass = require('./webpack/sass');
 
 // module settings
 const common = merge ([
@@ -43,7 +43,8 @@ module.exports = function(env) {
   if (env === 'development'){
     return merge([
       common,
-      devserver()
+      devserver(),
+      sass()
     ])
   }
 }
