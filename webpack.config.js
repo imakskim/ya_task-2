@@ -31,9 +31,26 @@ const common = merge ([
     },
     plugins: [
       new HtmlWebpackPlugin({
+        filename: 'index.html',
         template: './index.pug'
-      })
-    ]
+      }),
+    ],
+    optimization: {
+      minimize: false,
+      runtimeChunk: { name: 'common' },
+      splitChunks: {
+        cacheGroups: {
+          default: false,
+          commons: {
+            test: /\.jsx?$/,
+            chunks: 'all',
+            minChunks: 2,
+            name: 'common',
+            enforce: true,
+          },
+        },
+      },
+    },
   },
     pug()
 ]);
