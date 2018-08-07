@@ -346,4 +346,13 @@ body {
   background-color: grey; }
 
 h1 {
-  color: green; }
+  color: green;
+  display: -ms-flexbox;
+  display: flex; }
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: -ms-flexbox;
+  display: flex; }

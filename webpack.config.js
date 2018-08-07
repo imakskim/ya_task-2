@@ -36,7 +36,7 @@ const common = merge ([
       }),
     ],
     optimization: {
-      minimize: false,
+      minimize: true,
       runtimeChunk: { name: 'common' },
       splitChunks: {
         cacheGroups: {

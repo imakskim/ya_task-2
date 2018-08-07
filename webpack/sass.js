@@ -8,7 +8,7 @@ module.exports = function (paths) {
           use: [
             'style-loader',
             'css-loader',
-            'postcss',
+            'postcss-loader',
             'sass-loader'
           ]
         }

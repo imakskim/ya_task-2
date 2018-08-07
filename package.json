@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/js/app.js",
+  "browserslist": [
+    "> 1%",
+    "ie >9"
+  ],
   "scripts": {
     "start": "webpack-dev-server --env development --mode development --open",
     "build": "webpack --env production --mode production",
@@ -19,6 +23,7 @@
   },
   "homepage": "https://github.com/imakskim/ya_task-2#readme",
   "devDependencies": {
+    "autoprefixer": "^9.1.0",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
