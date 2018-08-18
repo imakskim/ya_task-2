@@ -8,8 +8,33 @@ html
   body
     .wrapper
       header.header
-        .container
-    h1 Сводка
-    p Начнет охлаждать
-    .block 
-    img(src=require("./images/logo.png"), alt="" width="100%")
+        .container.container_header
+          .header__logo
+            a.logo(href="#")
+          menu.header__menu
+            ul.menu__list
+              li.menu__item 
+                a.menu__link.menu__link-active(href="#") Сводка
+              li.menu__item 
+                a.menu__link(href="#") Устройства
+              li.menu__item 
+                a.menu__link(href="#") Сценарии
+      main.main
+        .main__container
+          .main-data
+          .top-tasks
+          .top-device
+      footer.footer
+
+
+
+
+
+
+
+
+
+    //- h1 Сводка
+    //- p Начнет охлаждать
+    //- .block 
+    //- img(src=require("./images/logo.png"), alt="" width="100%")
