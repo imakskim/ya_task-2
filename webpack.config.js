@@ -9,7 +9,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const sass = require('./webpack/sass');
 const css = require('./webpack/css');
 const extractCSS = require('./webpack/css.extract');
-const images = require('./webpack/images');
+const files = require('./webpack/files');
 
 // module settings
 const common = merge ([
@@ -54,7 +54,7 @@ const common = merge ([
     },
   },
     pug(),
-    images()
+    files()
 ]);
 
 module.exports = function(env) {

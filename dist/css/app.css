@@ -339,27 +339,49 @@ template {
 [hidden] {
   display: none;
 }
-html, body {
+body, html {
   height: 100%; }
 
 body {
-  background-color: grey; }
+  font-family: 'ArialMT', Arial;
+  font-size: 16px;
+  line-height: 1.42;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-h1 {
-  color: green;
-  display: -ms-flexbox;
-  display: flex; }
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%; }
 
-.block {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: -ms-flexbox;
-  display: flex; }
+.container {
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+  max-width: 1800px;
+  position: relative; }
 
-@font-face {
-  font-family: 'bernier';
-  src: url(../fonts/bernierregular-regular-webfont.woff) format("woff"), url(../fonts/bernierregular-regular-webfont.woff2) format("woff2");
+section {
+  min-height: 600px;
+  width: 100%; }
+
+button {
+  border: 0;
+  cursor: pointer; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-style: normal;
-  font-display: block; }
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
