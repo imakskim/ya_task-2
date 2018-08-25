@@ -353,11 +353,16 @@ body {
 
 .wrapper {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 70px 1fr 64px;
+  grid-template-columns: 1fr; }
 
 .container {
   margin: 0 auto;
-  width: 95%;
+  margin-left: 40px;
+  margin-right: 40px;
   height: 100%;
   max-width: 1800px;
   position: relative; }
@@ -382,9 +387,138 @@ p {
   margin: 0;
   padding: 0; }
 
+.title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #333333; }
+
+.info__title {
+  font-size: .88rem;
+  color: #858585; }
+
 .header {
   width: 100%;
-  height: 70px; }
+  height: 70px;
+  border-bottom: 1px solid #F0F0F0; }
+
+.container_header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .logo {
-  background-image: url(../images/logo.png); }
+  display: block;
+  height: 27px;
+  width: 108px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: cover; }
+
+.header__menu {
+  padding-left: 52px; }
+
+.menu__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.menu__item {
+  margin-right: 25px; }
+
+.menu__link {
+  text-decoration: none;
+  color: #333333;
+  opacity: .6;
+  font-weight: 700; }
+  .menu__link-active {
+    opacity: 1; }
+
+.main__container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: "left right" 1fr "bottom bottom" .45fr / 1fr 1fr; }
+
+.top-device {
+  grid-area: bottom; }
+
+.general {
+  padding-left: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.title_general {
+  height: 17%;
+  margin-top: 24px; }
+
+.general__container {
+  height: 80%;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 25px;
+  border-radius: 25px;
+  background: url(../images/general_bg_laptop.png) center no-repeat;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.general__message {
+  font-size: 1.69rem;
+  font-weight: 700;
+  color: #333333; }
+
+.general__condition {
+  font-size: .88rem;
+  color: #333333; }
+
+.general__info-weather {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 18px; }
+
+.temp {
+  font-size: 2.25rem;
+  color: #333333;
+  font-weight: 700;
+  line-height: 42px; }
+
+.inside-weather {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-right: 18px; }
+
+.general-tile__item {
+  margin-bottom: 15px; }
+
+.tile__item {
+  padding: 14px;
+  width: 200px;
+  height: 120px;
+  background: #F7F7F7;
+  border-radius: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.tile__device-name {
+  font-size: .88rem;
+  color: #333333;
+  font-weight: 700; }
+
+.tile__info {
+  font-size: .75rem;
+  color: #858585; }

@@ -1,0 +1,32 @@
+.tile__item {
+  padding: 14px;
+  width: 200px;
+  height: 120px;
+  background: #F7F7F7;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tile__device-name {
+  font-size: .88rem;
+  color: #333333;
+  font-weight: 700;
+}
+
+.tile__info {
+  font-size: .75rem;
+  color: #858585;
+}
+
+.tile__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.tile__function-title {
+  font-size: .88rem;
+  color: #333333;
+  font-weight: 700;
+}

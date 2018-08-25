@@ -1,0 +1,13 @@
+.main__container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: 
+    "left right" minmax(400px, 1fr)
+    "bottom bottom" .5fr
+    / 1fr 683px;
+}
+
+.top-device {
+  grid-area: bottom;
+}

@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 70px;
+  height: 92px;
   border-bottom: 1px solid #F0F0F0;
 }
 
@@ -34,6 +34,7 @@
   text-decoration: none;
   color: #333333;
   opacity: .6;
+  font-weight: 700;
 
   &-active {
     opacity: 1;

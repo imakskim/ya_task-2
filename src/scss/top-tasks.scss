@@ -1,0 +1,76 @@
+.top-tasks {
+  margin-left: 13px;
+  margin-right: 40px;
+}
+
+.title_top-tasks-container {
+  position: relative;
+  height: 17%;
+}
+
+.title_top-tasks {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.top-tasks__container {
+  overflow: hidden;
+  width: 100%;
+  height: 83%;
+  position: relative;
+}
+
+.top-tasks__list {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: right 0.3s;
+}
+
+.top-tasks__item {
+  width: 100%;
+}
+
+.tile__item_top-tasks {
+  height: 100px;
+}
+
+.tile__item_top-tasks {
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.tile__list_top-tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-tasks-arrow-container {
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.top-tasks-arrow {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 13px;
+  background: url("./images/icons/arrow.png") no-repeat;
+  background-size: contain;
+  cursor: pointer;
+
+  &_right {
+    transform: scale(-1, 1)
+  }
+}

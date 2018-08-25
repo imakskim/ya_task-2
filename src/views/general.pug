@@ -1,0 +1,27 @@
+.general
+  .title__general-container
+    h2.title.title_general Главное
+  .general__container
+    .general__info
+      .general__info-description
+        p.general__message Привет, Геннадий!
+        p.general__condition Двери и окна закрыты, сигнализация включена.
+      .general__info-weather
+        .inside-weather
+          .info__title Дома
+          .temp.inside__temp +23
+        .outside-weather
+          .info__title За окном
+          .temp.outside__temp +19
+    .general__slider
+      ul.tile__list
+        li.tile__item.tile__item_general
+          img.tile__icon(src=require('./../images/icons/icon_temperature.svg'), alt="Иконка термометра")
+          .tile__description
+            .tile__device-name Philips Cooler
+            .tile__info Начнет охлаждать в 16:30
+        li.tile__item.tile__item_general
+          img.tile__icon(src=require('./../images/icons/icon_sun.svg'), alt="Иконка солнце")
+          .tile__description
+            .tile__device-name Xiaomi Yeelight LED Smart Bulb
+            .tile__info Включится в 17:00

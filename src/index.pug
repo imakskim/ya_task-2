@@ -21,10 +21,14 @@ html
                 a.menu__link(href="#") Сценарии
       main.main
         .main__container
-          .main-data
-          .top-tasks
-          .top-device
+          include ./views/general.pug
+          include ./views/top-tasks.pug
+          include ./views/top-device.pug
       footer.footer
+        a(href="#") Помощь
+        a(href="#") Обратная связь
+        a(href="#") Разработчикам
+        a(href="#") Условия использования
 
 
 
@@ -33,8 +37,3 @@ html
 
 
 
-
-    //- h1 Сводка
-    //- p Начнет охлаждать
-    //- .block 
-    //- img(src=require("./images/logo.png"), alt="" width="100%")

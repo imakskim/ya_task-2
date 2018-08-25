@@ -1,4 +1,4 @@
 require("./../index.scss");
 import "normalize.css";
 
-import "./modules/scroll"
+import "./modules/tasks-slider"

@@ -1,0 +1,27 @@
+.top-device
+  .top-device_header
+    .title.title_top-device Избранные устройства
+    .top-device__menu
+      ul.top-device__menu-list
+        li.top-device__menu-item
+          button.top-device__menu-button.top-device__menu-button_active Все
+        li.top-device__menu-item
+          button.top-device__menu-button Кухня
+        li.top-device__menu-item
+          button.top-device__menu-button Зал
+        li.top-device__menu-item
+          button.top-device__menu-button Лампочки
+        li.top-device__menu-item
+          button.top-device__menu-button Камеры
+  .top-device__slider
+    ul.tile__list.tile__list_top-device
+        li.tile__item.tile__item_top-device
+          img.tile__icon(src=require('./../images/icons/icon_temperature.svg'), alt="Иконка термометра")
+          .tile__description
+            .tile__device-name Philips Cooler
+            .tile__info Начнет охлаждать в 16:30
+        li.tile__item.tile___top-device
+          img.tile__icon(src=require('./../images/icons/icon_sun.svg'), alt="Иконка солнце")
+          .tile__description
+            .tile__device-name Xiaomi Yeelight LED Smart Bulb
+            .tile__info Включится в 17:00

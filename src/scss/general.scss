@@ -1,0 +1,63 @@
+.general {
+  margin-left: 40px;
+  margin-right: 13px;
+}
+
+.title__general-container{
+  position: relative;
+  height: 17%;
+}
+
+.title_general {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.general__container {
+  height: 83%;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 25px;
+  border-radius: 25px;
+  background: url("./images/general_bg_laptop.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.general__message {
+  font-size: 1.69rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.general__condition {
+  font-size: .88rem;
+  color: #333333;
+}
+
+.general__info-weather {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.temp {
+  font-size: 2.25rem;
+  color: #333333;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.inside-weather {
+  display: flex;
+  flex-direction: column;
+  margin-right: 18px;
+}
+
+.tile__item_general {
+  margin-bottom: 15px;
+}

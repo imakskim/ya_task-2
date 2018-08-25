@@ -9,17 +9,61 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
+        <div class="container container_header">
           <div class="header__logo"><a class="logo" href="#"></a></div>
           <menu class="header__menu">
             <ul class="menu__list">
-              <li class="menu__item"> <a class="menu__link" href="#">Сводка</a></li>
+              <li class="menu__item"> <a class="menu__link menu__link-active" href="#">Сводка</a></li>
               <li class="menu__item"> <a class="menu__link" href="#">Устройства</a></li>
               <li class="menu__item"> <a class="menu__link" href="#">Сценарии</a></li>
             </ul>
           </menu>
         </div>
       </header>
+      <main class="main">
+        <div class="main__container">
+<div class="general">
+  <div class="title title_general">Главное</div>
+  <div class="general__container">
+    <div class="general__info">
+      <div class="general__info-description">
+        <p class="general__message">Привет, Геннадий!</p>
+        <p class="general__condition">Двери и окна закрыты, сигнализация включена.</p>
+      </div>
+      <div class="general__info-weather">
+        <div class="inside-weather">
+          <div class="info__title">Дома</div>
+          <div class="temp inside__temp">+23</div>
+        </div>
+        <div class="outside-weather">
+          <div class="info__title">За окном</div>
+          <div class="temp outside__temp">+19</div>
+        </div>
+      </div>
+    </div>
+    <div class="general__slider">
+      <ul class="tile__list">
+        <li class="tile__item general-tile__item"><img class="tile__icon" src="images/icon_temperature.svg" alt="Иконка термометра">
+          <div class="tile__description">
+            <div class="tile__device-name">Philips Cooler</div>
+            <div class="tile__info">Начнет охлаждать в 16:30</div>
+          </div>
+        </li>
+        <li class="tile__item general-tile__item"><img class="tile__icon" src="" alt="Иконка солнце">
+          <div class="tile__description">
+            <div class="tile__device-name">Xiaomi Yeelight LED Smart Bulb</div>
+            <div class="tile__info">Включится в 17:00</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+          <div class="top-tasks"></div>
+          <div class="top-device"></div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
     </div>
   <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/app.js"></script></body>
 </html>
